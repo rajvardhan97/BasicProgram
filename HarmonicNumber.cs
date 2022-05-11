@@ -13,12 +13,18 @@ namespace BasicProgram
             float value = 0;
             Console.WriteLine("Enter a number to find Nth harmonic number ");
             int n = Convert.ToInt32(Console.ReadLine());
-            for(float i = 1; i <= n; i++)
+            while (n == 0)
             {
-              value += 1 / i;
+                Console.WriteLine("Invalid Input, Please Enter another number");
+                n = Convert.ToInt32(Console.ReadLine());
             }
-
-            Console.WriteLine("Nth Harmonic number is " + value);
+                for (float i = 1; i <= n; i++)
+                {
+                    value += 1 / i;
+                }
+                Console.WriteLine("Nth Harmonic number is " + value);
+            
+            
         }
     }
 }
