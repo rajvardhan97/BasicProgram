@@ -4,8 +4,7 @@
     {
         public static void Main(String[] args)
         {
-            Console.WriteLine("Enter a  number for a particular problem.\n " +
-                "Press 1 to Flip coin and find percentage of heads and tails \n" +
+            Console.WriteLine("Press 1 to Flip coin and find percentage of heads and tails \n" +
                 " Press 2 for checking Leap year \n Press 3 for finding power of 2 " +
                 "\n Press 4 for Harmonic number \n Press 5 for prime factors \n Press 6 to find quotient and remainder \n" +
                 " Press 7 to swap 2 numbers \n Press 8 to Check if a number is even or odd \n Press 9 to Check Whether an " +
@@ -54,6 +53,9 @@
                     Greatest number = new Greatest();
                     number.largest();
                     break;
+                default:
+                    Console.Write("Invalid Choice");
+                    break;    
             }
         }
     }
